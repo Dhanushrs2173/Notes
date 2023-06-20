@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Header */
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    animation: slide-down 1s ease-in-out;
+  }
+  
+  @keyframes slide-down {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #4caf50;
+  }
+  
+  /* Sections */
+  section {
+    padding: 40px;
+  }
+  
+  h2 {
+    color: #333;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .course {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    animation: fade-in 1s ease-in-out;
+  }
+
+  .enrollment-block {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    display: none; /* Initially hide the enrollment details block */
+  }
+  #puzzle-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .puzzle-piece {
+    width: 90px;
+    height: 90px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #start-puzzle {
+    margin-top: 10px;
+  }
+  
