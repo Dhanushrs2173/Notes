@@ -1,107 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Education Website</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5014988075323756"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Computer Science Notes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h1 {
+      color: #007bff;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .subject-container {
+      margin-bottom: 20px;
+    }
+
+    .module-link {
+      display: block;
+      padding: 10px;
+      margin: 10px 0;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .module-link:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Education Website</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#courses">Courses</a></li>
-        <li><a href="#about">Abouts</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login">Login</a></li>
-      </ul>
-    </nav>
+    <h1>Engineering Computer Science Notes</h1>
   </header>
 
-  <section id="home">
-    <h2>Welcome to Our Education Website</h2>
-    <p>Learn and excel in various courses!</p>
-  </section>
-
-  <section id="courses">
-    <h2>Available Courses</h2>
-    <div class="course">
-      <h3>Course 1</h3>
-      <p>Description of course 1.</p>
-      <button class="enroll-button" data-course="Course 1">Enroll</button>
+  <main>
+    <div class="subject-container">
+      <h2>Subject 1</h2>
+      <a class="module-link" href="path/to/subject1/module1.pdf" download>Module 1</a>
+      <a class="module-link" href="path/to/subject1/module2.pdf" download>Module 2</a>
+      <a class="module-link" href="path/to/subject1/module3.pdf" download>Module 3</a>
+      <a class="module-link" href="path/to/subject1/module4.pdf" download>Module 4</a>
+      <a class="module-link" href="path/to/subject1/module5.pdf" download>Module 5</a>
     </div>
-    <div class="course">
-      <h3>Course 2</h3>
-      <p>Description of course 2.</p>
-      <button class="enroll-button" data-course="Course 2">Enroll</button>
+
+    <div class="subject-container">
+      <h2>Subject 2</h2>
+      <a class="module-link" href="path/to/subject2/module1.pdf" download>Module 1</a>
+      <a class="module-link" href="path/to/subject2/module2.pdf" download>Module 2</a>
+      <a class="module-link" href="path/to/subject2/module3.pdf" download>Module 3</a>
+      <a class="module-link" href="path/to/subject2/module4.pdf" download>Module 4</a>
+      <a class="module-link" href="path/to/subject2/module5.pdf" download>Module 5</a>
     </div>
-    <!-- Add more course divs as needed -->
-  </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Description of your education website.</p>
-  </section>
+    <!-- Add more subjects as needed -->
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contact-form">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required><br>
+  </main>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea><br>
-
-      <input type="submit" value="Submit">
-    </form>
-  </section>
-
-  <section id="login">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required><br>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" autocomplete="current-password" required><br>
-
-      <input type="submit" value="Login">
-    </form>
-  </section>
-
-  <!-- Enrollment Details Section -->
-  <div id="enrollment-details" class="enrollment-block">
-    <h2>Enrollment Details</h2>
-    <form id="enrollment-form">
-      <label for="enrollment-name">Name:</label>
-      <input type="text" id="enrollment-name" name="enrollment-name" required><br>
-
-      <label for="enrollment-email">Email:</label>
-      <input type="email" id="enrollment-email" name="enrollment-email" required><br>
-
-      <label for="enrollment-phone">Phone:</label>
-      <input type="tel" id="enrollment-phone" name="enrollment-phone" required><br>
-
-      <button type="button" id="confirm-enrollment">Confirm</button>
-    </form>
-    <div id="biodata"></div>
-  </div>
-  <section id="puzzle">
-    <h2>Puzzle Game</h2>
-    <div id="puzzle-container"></div>
-    <button id="start-puzzle">Start Puzzle</button>
-  </section>
-  
-
-  <footer>
-    <p>&copy; 2023 Education Website. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
